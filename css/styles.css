@@ -411,6 +411,25 @@ footer a {
 
 @media only screen and (min-width: 35rem) {
   /* NAVIGATION STUFF GOES HERE  */
+  body {
+    display: block;
+  }
+  #top a, #navlinks > a {
+    display: none;
+  }
+  nav {
+    height: auto;
+    border-bottom: 2px solid #ccc;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav li a {
+    border: none;
+  }
+  nav li a:hover {
+    background-color: #eee;
+  }
 }
 @media only screen and (min-width: 64rem) {
   header, nav, main {

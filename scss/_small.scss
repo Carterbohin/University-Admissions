@@ -78,6 +78,7 @@ div#navWrapper {
     }
     li.active a {
         color: $secondaryColor;
+        text-decoration: underline;
     }
  }//end of nav stuff
 

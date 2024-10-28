@@ -378,6 +378,7 @@ nav li a {
 }
 nav li.active a {
   color: #7c1d48;
+  text-decoration: underline;
 }
 
 /* --------------------------- MAIN --------------------------- */

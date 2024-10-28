@@ -399,12 +399,12 @@ form.my-form {
 form.my-form label {
   display: block;
   font-size: 0.8rem;
-  color: #7c1d48;
+  color: #026669;
   padding-top: 0.2rem;
 }
 form.my-form h3 {
   font-size: 0.9rem;
-  color: #1d295f;
+  color: #7c1d48;
   margin: 1.5rem 0 0.2rem 0;
   border-bottom: 1px solid #eee;
 }

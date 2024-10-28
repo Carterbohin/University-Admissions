@@ -40,26 +40,50 @@
 
 <div id="mainWrapper">
     <main>
+        <h1>Apply</h1>
+        <h3>Personal Information</h3>
+        <form method="GET" action="thanks.html" class="my-form" autocomplete="on">
+        <label>First Name: <input type="text" name="fname" autocomplete="given-name" required title="First Name here"></label>
+        <label>Last Name: <input type="text" name="lname" autocomplete="family-name" required title="Last Name here"></label>
+        <label>Email: <input type="email" name="email" autocomplete="email" required title="Your Email Please"></label>
+        <label>Phone: <input type="tel" name="phone" autocomplete="tel" required title="Cell Phone Here"></label>
 
-        <h1>Best Practices</h1>
-   
-        <p>Competently myocardinate cross-media infomediaries via end-to-end architectures. Enthusiastically implement end-to-end functionalities vis-a-vis excellent strategic theme areas. Conveniently supply enterprise action items with integrated innovation. Authoritatively cultivate sustainable portals for orthogonal core competencies. Distinctively coordinate team driven portals rather than synergistic processes.</p>
+        <h3>Your state</h3>
+        <label>
+            <select name="Condition">
+                <option value="No Selection Made">Please Select</option>
+                <option value="fair">Fair Condition</option>
+                <option value="UT">Utah</option>
+            </select>
+        </label>
 
-        <p>Appropriately simplify enterprise information via leveraged total linkage. Progressively grow installed base infrastructures without open-source technologies. Distinctively embrace mission-critical internal or "organic" sources after competitive imperatives. Professionally whiteboard state of the art models through high-payoff expertise. Authoritatively exploit transparent users through virtual channels.</p>
+        <h3>Education Completed</h3>
+        <label><input type="checkbox" name="ged">GED</label>
+        <label><input type="checkbox" name="high school">High School</label>
+        <label><input type="checkbox" name="associates">Two Year Associates Degree</label>
 
-        <p>Interactively transition user-centric web services without scalable collaboration and idea-sharing. Holisticly restore next-generation data before seamless expertise. Monotonectally grow synergistic synergy without bricks-and-clicks ROI. Uniquely optimize 24/365 convergence after integrated synergy. Distinctively synthesize high-quality methodologies for performance based bandwidth.</p>
 
-     
+        <h3>Communication Preferences</h3>
+        <label><input type="radio" name="communication" value="send text">Send Text</label>
+        <label><input type="radio" name="communication" value="send email">Send Email</label>
+        <label><input type="radio" name="communication" value="send mail">Send Mail</label>
 
+        <label>UserName (6 or more)<input type="text" required minlength="6" title="Please enter a UserName that is at least 6 characters long"></label>
+
+        <label> Password (5-9 letters or numbers) <input type="password" name="password" required pattern="[A-Za-z0-9]{5,9}"></label>
+
+        <input type="submit" value="register">
+        </form>
     </main>
 </div><!-- end main wrapper -->
     
 <div id="footerWrapper">
     <footer>
-        <p>Copyright &copy; 2025 Design Thinking Inc. All rights reserved. 
-            <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Clients</a></p>
+        <p> &copy; <span id="year">2024</span> &bull; Carter Bohin</p> 
+            
     </footer>
 </div> <!-- end footer wrapper -->
    
+<script src="js/script.js"></script>
 </body>
 </html> 

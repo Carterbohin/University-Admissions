@@ -448,6 +448,10 @@ form.my-form input[type=submit] {
   -moz-appearance: none;
        appearance: none;
 }
+form.my-form input[type=radio], form.my-form input[type=checkbox] {
+  padding: 10px;
+  margin: 10px;
+}
 
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {

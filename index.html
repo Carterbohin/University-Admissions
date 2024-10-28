@@ -51,20 +51,38 @@
         <label>City: <input type="text" name="city" autocomplete="address-level2"  title="City Here"></label>
         <label>State: <input type="text" name="state" autocomplete="address-level1"  title="State Here"></label>
         <label>Zip Code: <input type="text" name="zip" autocomplete="postal-code"  title="Zip Here"></label>
-        <h3>Your state</h3>
-        <label>
-            <select name="Condition">
-                <option value="No Selection Made">Please Select</option>
-                <option value="fair">Fair Condition</option>
-                <option value="UT">Utah</option>
-            </select>
-        </label>
 
+   
         <h3>Education Completed</h3>
         <label><input type="checkbox" name="ged">GED</label>
         <label><input type="checkbox" name="high school">High School</label>
         <label><input type="checkbox" name="associates">Two Year Associates Degree</label>
 
+        <h3>Previous School</h3>
+        <label>
+            <select name="Condition" id="schoolSelect" onchange="toggleOtherSchoolInput()">
+                <option value="No Selection Made">Please Select</option>
+                <option value="bh">Bingham High</option>
+                <option value="cc">Corner Canyon</option>
+                <option value="fh">Farmington</option>
+                <option value="hh">Herriman</option>
+                <option value="hl">Highland</option>
+                <option value="mh">Murray</option>
+                <option value="sk">Skyline</option>
+                <option value="rh">Riverton</option>
+                <option value="other">Other</option>
+            </select>
+        </label>
+        <br>
+        <label id="otherSchoolLabel" style="display:none;">
+            Please enter the high school: 
+            <input type="text" name="otherSchool" title="Please put high school here">
+        </label>
+        
+
+
+        <h3>High School Graduation Date</h3>
+        <input type="date" value="2022-03-01" />
 
         <h3>Communication Preferences</h3>
         <label><input type="radio" name="communication" value="send text">Send Text</label>

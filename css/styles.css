@@ -412,7 +412,7 @@ form.my-form input[type=text],
 form.my-form input[type=email],
 form.my-form input[type=tel],
 form.my-form input[type=password],
-form.my-form input[type=number],
+form.my-form input[type=date],
 form.my-form select {
   display: block;
   margin: 0.1rem 0 1rem 0;

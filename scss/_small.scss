@@ -128,9 +128,9 @@ select {
     display: block;
     margin: .1rem 0 1rem 0;
     border: 1px solid #999;
-    border-radius: 5px 5px 0 0;
-    border-bottom-width: 5px;
-    border-bottom-color: #555;
+    border-radius: 0 5px 5px 0;
+    border-left-width: 5px;
+    border-left-color: #555;
     font-size: 1rem;
     color: $accentColor;
     width: 250px;
@@ -139,10 +139,10 @@ select {
 
 
 input:required {
-    border-bottom-color: rgb(219, 0, 0);
+    border-left-color: rgb(219, 0, 0);
 }
-input:focus{border-bottom-color: grey;}
-input:required:valid{border-bottom-color: green;}
+input:focus{border-left-color: grey;}
+input:required:valid{border-left-color: green;}
 
 input[type=submit] {
     border: none;

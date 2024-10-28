@@ -313,7 +313,7 @@ html {
 
 /* --------------------------- BODY --------------------------- */
 body {
-  font-family: "Spline Sans", sans-serif;
+  font-family: "Poppins", serif;
   font-weight: 300;
   min-width: 320px;
   display: grid;
@@ -377,14 +377,14 @@ nav li a {
   border-bottom: 1px solid #ccc;
 }
 nav li.active a {
-  color: #7c1d47;
+  color: #7c1d48;
 }
 
 /* --------------------------- MAIN --------------------------- */
 main h1 {
   padding: 1rem 10px 0.5rem 10px;
   font-size: 1.5rem;
-  color: #7c1d47;
+  color: #7c1d48;
   font-weight: 300;
 }
 main p {
@@ -399,7 +399,7 @@ form.my-form {
 form.my-form label {
   display: block;
   font-size: 0.8rem;
-  color: #7c1d47;
+  color: #7c1d48;
   padding-top: 0.2rem;
 }
 form.my-form h3 {
@@ -417,26 +417,26 @@ form.my-form select {
   display: block;
   margin: 0.1rem 0 1rem 0;
   border: 1px solid #999;
-  border-radius: 5px 5px 0 0;
-  border-bottom-width: 5px;
-  border-bottom-color: #555;
+  border-radius: 0 5px 5px 0;
+  border-left-width: 5px;
+  border-left-color: #555;
   font-size: 1rem;
-  color: #3990c3;
+  color: #026669;
   width: 250px;
   padding: 0.5rem 10px;
 }
 form.my-form input:required {
-  border-bottom-color: rgb(219, 0, 0);
+  border-left-color: rgb(219, 0, 0);
 }
 form.my-form input:focus {
-  border-bottom-color: grey;
+  border-left-color: grey;
 }
 form.my-form input:required:valid {
-  border-bottom-color: green;
+  border-left-color: green;
 }
 form.my-form input[type=submit] {
   border: none;
-  background-color: #7c1d47;
+  background-color: #7c1d48;
   color: white;
   border-radius: 1rem;
   padding: 0.75rem 1.5rem;

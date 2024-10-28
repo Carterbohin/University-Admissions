@@ -17,6 +17,7 @@ body {
     font-family: $defaultFont;
     font-weight: $lightWeight;
     min-width: 320px;
+    display: grid;
 }
 
 
@@ -24,7 +25,7 @@ body {
 #headerWrapper {border-bottom: 1px solid $greyColor;}
 header {
     display: grid;
-    grid-template-columns: 50px auto;
+    grid-template-columns: 50px auto 44px;
     column-gap: $gutter;
     align-items: center; //vertically
     padding: .5rem $gutter;
@@ -38,10 +39,47 @@ header {
 
 /* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
 
+div#navWrapper {
+    grid-row-start: 4;
+}
+
+ #top a, #navlinks > a {
+    display: block;
+    text-align: right;
+    font-size: 1.6rem;
+    height: 44px;
+    text-decoration: none;
+    color: #333;
+ }
+
+#top a {
+    font-size: 2rem;
+}
+
+#navlinks > a {
+    padding: 15px 13px 0 0;
+}
 
 
-
-
+ nav {
+    height: 100vh;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    li a {
+        display: block;
+        color: $primaryColor;
+        padding: .9rem 2vw;
+        text-decoration: none;
+        text-align: right;
+        border-bottom: 1px solid $greyColor;
+    }
+    li.active a {
+        color: $secondaryColor;
+    }
+ }//end of nav stuff
 
 
 

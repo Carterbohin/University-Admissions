@@ -316,6 +316,7 @@ body {
   font-family: "Spline Sans", sans-serif;
   font-weight: 300;
   min-width: 320px;
+  display: grid;
 }
 
 /* --------------------------- HEADER --------------------------- */
@@ -325,7 +326,7 @@ body {
 
 header {
   display: grid;
-  grid-template-columns: 50px auto;
+  grid-template-columns: 50px auto 44px;
   -moz-column-gap: 10px;
        column-gap: 10px;
   align-items: center;
@@ -338,6 +339,47 @@ header span {
 }
 
 /* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
+div#navWrapper {
+  grid-row-start: 4;
+}
+
+#top a, #navlinks > a {
+  display: block;
+  text-align: right;
+  font-size: 1.6rem;
+  height: 44px;
+  text-decoration: none;
+  color: #333;
+}
+
+#top a {
+  font-size: 2rem;
+}
+
+#navlinks > a {
+  padding: 15px 13px 0 0;
+}
+
+nav {
+  height: 100vh;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav li a {
+  display: block;
+  color: #1d295f;
+  padding: 0.9rem 2vw;
+  text-decoration: none;
+  text-align: right;
+  border-bottom: 1px solid #ccc;
+}
+nav li.active a {
+  color: #7c1d47;
+}
+
 /* --------------------------- MAIN --------------------------- */
 main h1 {
   padding: 1rem 10px 0.5rem 10px;
